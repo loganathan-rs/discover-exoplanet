@@ -17,7 +17,7 @@ gem install bundler
 
 Execute below commands
 
-1. `git clone`
+1. `git clone https://github.com/loganathan-rs/discover-exoplanet.git`
 2. `bundle install`
 3. `bundle exec rackup`
 4. Head over to `localhost:9292`
