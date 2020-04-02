@@ -21,3 +21,13 @@ Execute below commands
 2. `bundle install`
 3. `bundle exec rackup`
 4. Head over to `localhost:9292`
+
+### Screenshots
+
+## All Planets
+
+![GitHub Logo](./images/all.png)
+
+## Medium and Large Planets
+
+![GitHub Logo](./images/medium-large.png)
