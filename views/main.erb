@@ -1,0 +1,12 @@
+<h1> <%= @title %> </h1>
+<ul class="w3-ul">
+  <li class="w3-blue"><%= 'No. of Orphan Planets' %>: <stong><%= @no_of_orphan_planets %></strong></li>
+  <li class="w3-green"><%= 'The planet name orbiting the hottest star' %>: <stron><%= @planet_orbiting_hottest_star %></strong></li>
+</ul>
+
+<center>
+  <h2> <%= 'Planets Discoverd per year by size' %> </h2>
+  <p>
+    <%= line_chart @data %>
+  </p>
+</center>
