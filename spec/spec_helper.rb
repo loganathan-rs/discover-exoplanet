@@ -21,6 +21,17 @@ WebMock.disable_net_connect!(:allow_localhost => true)
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
+  config.before do
+    stub_const("LOCAL_SOURCE_JSON_FILE", './spec/fixtures/public/fake_planets.json')
+    stub_request(:get, SOURCE_URL).
+         with(
+           headers: {
+             'Accept'=>'*/*',
+             'Host'=>'gist.githubusercontent.com',
+             'User-Agent'=>'Ruby'
+           }).
+         to_return(status: 200, body: File.open('./spec/fixtures/fake_source.json', 'rb').read, headers: {})
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
