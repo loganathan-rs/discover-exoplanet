@@ -22,6 +22,16 @@ Execute below commands
 3. `bundle exec rackup`
 4. Head over to `localhost:9292`
 
+### Run Unit Tests
+
+Ensure gems required for Testing by `bundle install` before running tests.
+
+Execute below command to run all test expectations 
+
+```sh
+bundle exec rspec -f d`
+```
+
 ### Screenshots
 
 ## All Planets
